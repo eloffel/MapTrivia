@@ -1,0 +1,440 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * FINAL PROJECT
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+/*login and register screens*/
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+    
+    text-overflow: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+/* allow map to fill viewport */
+#map-canvas, .container-fluid
+{
+    /* height of these elements */
+    height: 100%;
+
+    /* no margin around these elements */
+    margin: 0;
+
+    /* disable scrollbars */
+    overflow: hidden;
+
+    /* no padding within these elements */
+    padding: 0;
+}
+
+/* align form to right of pan control */
+#form
+{
+    /* distance from left edge of viewport */
+    left: 100px;
+
+    /* position form "absolutely" where we want it */
+    position: absolute;
+
+    /* distance from top edge of viewport */
+    top: 28px;
+}
+
+/* stylize text box */
+#q
+{
+    /* override typeahead.js's transparent background */
+    background-color: #ffffff !important;
+
+    /* text box's width */
+    width: 300px;
+}
+
+#inform
+{
+    font-family: 'Times New Roman', Times, Arial, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+/* stylize places' labels */
+.label
+{
+    /* small, black text */
+    color: #000000;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+    /* don't let places' labels wrap onto multiple lines */
+    white-space: nowrap;
+}
+
+/* stylize info window */
+#info
+{
+    /* no margin around this element */
+    margin: 0;
+
+    /* allow scrollbars as needed */
+    overflow: scroll;
+}
+#info ul
+{
+    margin-bottom: 0;
+}
+
+.main {
+    height: 947px;
+    width:1734px;
+    position: absolute;
+    left:178px;;
+    background: #333;
+    color: #fff;
+}
+
+/* coolest sidebar ever*/
+
+#cssmenu {
+  background: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  left:0; top:0px; bottom: 0;
+  width: 178px;
+}
+#cssmenu li {
+  font: 100% "Helvetica", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#cssmenu a {
+  background: #333;
+  border-bottom: 1px solid #494949;
+  border-right: 1px solid #494949;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#cssmenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu b {
+  background: #333;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  padding: 8px 0px;
+  border-right: 1px solid #494949;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#cssmenu logo {
+  background: #333;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-weight: normal;
+}
+#cssmenu a:hover {
+  background: #2580a2;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+#incontent
+{
+    background: #333;
+    padding-top: 100px;
+    padding-left: 100px;
+    text-overflow: auto;
+}
+
+#content
+{
+    color: #000;
+}
+
+html, body {
+        background-color:#333;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-overflow: auto;
+      }
+      #map {
+        height: 947px;
+        width:1742px;
+      }
+      
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+
+}
+
+/* Google maps native search box */
+
+#pac-input {
+  background-color: #fff;
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #000;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.contextmenu{
+    visibility:hidden;
+    background:#ffffff;
+    border:1px solid #AAA;
+    box-shadow: 2px 2px 3px #888888;
+    z-index: 10;  
+    position: relative;
+    width: 140px;
+}
+.contextmenu div{
+    padding-left: 5px
+    }
+
+#triviaWindow{
+    color: #000;
+}
+
+#add{
+    cursor:pointer;
+}
+
+#set_origin{
+    cursor:pointer;
+}
+
+/*coolest scrollbar ever*/
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-button {
+	width: 7px;
+	height:5px;
+}
+::-webkit-scrollbar-track {
+	background:#eee;
+	border: thin solid lightgray;
+	box-shadow: 0px 0px 3px #dfdfdf inset;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+	background:#999;
+	border: thin solid gray;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:#7d7d7d;
+}			
+
+#upvote:disabled {
+    background-image: url(/img/up_dis.png); /* the thumbs up becomes less opaque when it is disabled */
+    height:43px;
+    width:30px;
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    border: none;           /* assuming we don't want any borders */
+    cursor: initial;        /* make the cursor like hovering over an <a> element */
+    padding-left: 30px;     /* make text start to the right of the image */
+    text-align: center;
+}
+
+#downvote:disabled {
+    background-image: url(/img/down_dis.png); /* the thumbs down becomes less opaque when it is disabled */
+    height:43px;
+    width:30px;
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    border: none;           /* assuming we don't want any borders */
+    cursor: initial;        /* make the cursor like hovering over an <a> element */
+    padding-left: 30px;     /* make text start to the right of the image */
+    text-align: center;
+}
+
+#upvote {
+    background-image: url(/img/up_able.png);
+    height:43px;
+    width:30px;
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    padding-left: 30px;     /* make text start to the right of the image */
+    text-align: center;
+}
+
+#downvote {
+    background-image: url(/img/down_able.png);
+    height:43px;
+    width:30px;
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    padding-left: 30px;     /* make text start to the right of the image */
+}
+
+/* GRADIENT */
+
+#trivia{
+    font-family: Helvetica; /* Designer font */
+    background: #cecece; /* Old browsers */
+    background: -moz-linear-gradient(top, #cecece 0%, #ffffff 78%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cecece 0%,#ffffff 78%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cecece 0%,#ffffff 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 );
+    border-radius: 25px;
+    width:290px;
+    min-height: 100px;
+    overflow:auto;
+    max-height: 400px;
+    margin-bottom:5px;
+}
+
+#pos_rate{
+    text-align: center;
+    font-weight: bold;
+    color: #44ae4c; /*rate becomes green when it is positive*/
+}
+
+#neg_rate{
+    text-align: center;
+    font-weight: bold;
+    color: #cc1a1c; /*rate becomes red when it is negative*/
+}
+
+#trivia_user {
+    padding-top: 3px;
+    font-weight: bold;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+#trivia_text {
+    margin-left: 15px;
+    float: left;
+    max-width:195px;
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom:3px;
+}
+#trivia_rate {
+    width: 75px;
+    float: right;
+}
+#no_trivia{
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#new_trivia{
+    width:220px;
+    line-height: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+#locked{
+    color: #888; /* When the user doesn't have an achievement, it is gray*/
+}
+
+#unlocked{
+    color: #fff; /* When the user has an achievement, it is white*/
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 1px;
+}
